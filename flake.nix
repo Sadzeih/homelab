@@ -11,7 +11,7 @@
       ...
     } @ inputs: let 
     inherit (self) outputs;
-      vars = import "./vars.nix";
+      vars = import ./vars.nix;
 
       mkConfig = path:
         nixpkgs.lib.nixosSystem {
