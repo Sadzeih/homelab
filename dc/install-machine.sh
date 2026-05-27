@@ -61,4 +61,4 @@ echo -e "\033[32mFilesystems mounted successfully.\033[0m"
 # Completed
 echo -e "\n\033[1;32mAll steps completed successfully. NixOS is now ready to be installed.\033[0m\n"
 echo -e "To install NixOS configuration for hostname, run the following command:\n"
-echo -e "\033[1msudo nixos-install --root /mnt --flake github:Sadzeih/homelab#clusterNode\033[0m\n"
+echo -e "\033[1msudo nixos-install --root /mnt --flake github:Sadzeih/homelab#machine\033[0m\n"
