@@ -60,6 +60,8 @@
   time.timeZone = "Europe/Paris";
   zramSwap.enable = true;
 
+  programs.fish.enable = true;
+
   users.users.sadzeih = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"];
