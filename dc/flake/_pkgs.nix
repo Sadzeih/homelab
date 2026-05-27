@@ -6,5 +6,5 @@
     curl
     wget
     fish
-  ]
+  ];
 }
