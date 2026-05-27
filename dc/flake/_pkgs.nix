@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  environments.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     efibootmgr
     git
     neovim
