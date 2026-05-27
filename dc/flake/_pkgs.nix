@@ -6,5 +6,7 @@
     curl
     wget
     fish
+    htop
+    pciutils
   ];
 }
