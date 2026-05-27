@@ -62,7 +62,7 @@
 
   users.users.sadzeih = {
     isNormalUser = true;
-    extragroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel"];
     openssh.authorizedKeys.keys = [
       vars.sshPublicKey
     ];
