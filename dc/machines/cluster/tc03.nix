@@ -5,5 +5,5 @@
 		../../flake/types/cluster-node.nix
 	]
 
-	networking.hostName = "tc03"
+	networking.hostName = "tc03";
 }
