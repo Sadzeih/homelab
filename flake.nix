@@ -37,28 +37,28 @@
         tc01 = {
           hostname = "tc01";
           profiles.system = {
-            user = "sadzeih";
+            user = "root";
             path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc01;
           };
         };
         tc02 = {
           hostname = "tc02";
           profiles.system = {
-            user = "sadzeih";
+            user = "root";
             path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc02;
           };
         };
         tc03 = {
           hostname = "tc03";
           profiles.system = {
-            user = "sadzeih";
+            user = "root";
             path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc03;
           };
         };
         nas01 = {
           hostname = "nas01";
           profiles.system = {
-            user = "sadzeih";
+            user = "root";
             path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc03;
           };
         };
