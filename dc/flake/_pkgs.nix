@@ -8,5 +8,7 @@
     fish
     htop
     pciutils
+    lsiutil
+    megacli
   ];
 }
