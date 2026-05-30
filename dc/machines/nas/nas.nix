@@ -5,9 +5,9 @@
 		../../flake/types/cluster-node.nix
 	];
 
-	networking.hostName = "tc01";
+	networking.hostName = "nas01";
 	networking.interfaces.eno1.ipv4.addresses = [{
-		address = "10.0.0.30";
+		address = "10.0.0.40";
 		prefixLength = 32;
 	}];
 }
