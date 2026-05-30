@@ -10,4 +10,6 @@
 		address = "10.0.0.40";
 		prefixLength = 24;
 	}];
+	networking.defaultGateway = "10.0.0.1";
+	networking.nameservers = "1.1.1.1";
 }
