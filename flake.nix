@@ -62,8 +62,8 @@
             path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc03;
           };
         };
-
-        checks = builtins.mapAttrs (system: deployLib: deployLib.deployChecks self.deploy) deploy-rs.lib;
       };
+
+      checks = builtins.mapAttrs (system: deployLib: deployLib.deployChecks self.deploy) deploy-rs.lib;
     };
 }
