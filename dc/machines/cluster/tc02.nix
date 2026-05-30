@@ -8,6 +8,6 @@
 	networking.hostName = "tc02";
 	networking.interfaces.eno1.ipv4.addresses = [{
 		address = "10.0.0.31";
-		prefixLength = 32;
+		prefixLength = 24;
 	}];
 }

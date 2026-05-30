@@ -48,10 +48,6 @@
   services = {
     openssh = {
       enable = true;
-      settings = {
-        PermitRootLogin = "no";
-        PasswordAuthentication = false;
-      };
       openFirewall = true;
     };
     fstrim.enable = true;
@@ -62,12 +58,19 @@
 
   programs.fish.enable = true;
 
-  users.users.sadzeih = {
-    isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel"];
-    openssh.authorizedKeys.keys = [
-      vars.sshPublicKey
-    ];
-    shell = pkgs.fish;
+  users.users = {
+    root = {
+      openssh.authorizedKeys.keys = [
+        vars.sshPublicKey
+      ];
+    };
+    sadzeih = {
+      isNormalUser = true;
+      extraGroups = ["networkmanager" "wheel"];
+      openssh.authorizedKeys.keys = [
+        vars.sshPublicKey
+      ];
+      shell = pkgs.fish;
+    };
   };
 }

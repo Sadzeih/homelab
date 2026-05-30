@@ -59,7 +59,7 @@
           hostname = "nas01";
           profiles.system = {
             user = "root";
-            path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc03;
+            path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.nas01;
           };
         };
       };
