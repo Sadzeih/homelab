@@ -21,6 +21,8 @@
   # allows unfree packages (proprietary)
   nixpkgs.config.allowUnfree = true;
 
+  system.stateVersion = "25.11";
+
   nix = {
     gc = {
       automatic = true;

@@ -33,33 +33,33 @@
         nas01 = mkConfig ./dc/machines/nas/nas.nix;
       };
 
-      deploy.nodes = {
-        tc01 = {
-          hostname = "tc01";
-          profiles.system = {
-            user = "root";
-            path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc01;
+      deploy = {
+        sshUser = "root";
+        user = "root";
+        nodes = {
+          tc01 = {
+            hostname = "tc01";
+            profiles.system = {
+              path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc01;
+            };
           };
-        };
-        tc02 = {
-          hostname = "tc02";
-          profiles.system = {
-            user = "root";
-            path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc02;
+          tc02 = {
+            hostname = "tc02";
+            profiles.system = {
+              path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc02;
+            };
           };
-        };
-        tc03 = {
-          hostname = "tc03";
-          profiles.system = {
-            user = "root";
-            path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc03;
+          tc03 = {
+            hostname = "tc03";
+            profiles.system = {
+              path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.tc03;
+            };
           };
-        };
-        nas01 = {
-          hostname = "nas01";
-          profiles.system = {
-            user = "root";
-            path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.nas01;
+          nas01 = {
+            hostname = "nas01";
+            profiles.system = {
+              path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.nas01;
+            };
           };
         };
       };
