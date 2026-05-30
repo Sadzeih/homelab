@@ -10,5 +10,7 @@
     pciutils
     lsiutil
     megacli
+    zip
+    unzip
   ];
 }

@@ -11,10 +11,13 @@
 
   boot = {
     initrd = {
+      blacklistedKernelModules = ["mpt2sas"];
       availableKernelModules = ["xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod", "mpt3sas"];
-      kernelModules = [];
+      kernelModules = ["mpt3sas"];
     };
+    extraModulePacks = [config.boot.kernelPackages.mpt3sas];
     kernelModules = ["kvm-intel"];
+    kernelParams = ["pci=assign-busses" "pcie_ports=compat"];
   };
   
   fileSystems."/" = {
